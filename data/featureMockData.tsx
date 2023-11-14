@@ -8,36 +8,36 @@ export const featureMockData = [
     title: `World's best luxury homes`,
     content:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.',
-    logo: <BiWorld />,
+    logo: <BiWorld className="feature__icon" />,
   },
   {
     title: 'Only the best properties',
     content:
       'Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.',
-    logo: <BsTrophy />,
+    logo: <BiWorld className="feature__icon" />,
   },
   {
     title: 'All homes in the top locations',
     content:
       'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
-    logo: <CiLocationOn />,
+    logo: <BiWorld className="feature__icon" />,
   },
   {
     title: 'New home in one week',
     content:
       'Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    logo: <BsKey />,
+    logo: <BiWorld className="feature__icon" />,
   },
   {
     title: 'Top 1% realtors',
     content:
       'Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.',
-    logo: <HiOutlinePresentationChartLine />,
+    logo: <BiWorld className="feature__icon" />,
   },
   {
     title: 'Secure payments on nexter',
     content:
       'Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.',
-    logo: <BsLock />,
+    logo: <BiWorld className="feature__icon" />,
   },
 ];

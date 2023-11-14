@@ -6,8 +6,8 @@ const Features = () => {
     <div className="features">
       {featureMockData.map(({ title, content, logo }, index) => (
         <div className="feature" key={index}>
-          <span className="feature__icon">{logo}</span>
-          <h4 className="heading-4">{title}</h4>
+          {logo}
+          <h4 className="heading-4 heading-4--dark">{title}</h4>
           <p className="feature__text">{content}</p>
         </div>
       ))}
