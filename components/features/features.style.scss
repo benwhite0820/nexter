@@ -15,19 +15,6 @@
     grid-row-gap: 1.5rem;
     grid-column-gap: 2.5rem;
 
-    .heading-4 {
-      @extend %heading;
-      font-size: 1.9rem;
-
-      &--light {
-        color: $color-grey-light-1;
-      }
-
-      &--dark {
-        color: $color-grey-dark-1;
-      }
-    }
-
     &__icon {
       fill: $color-primary;
       width: 4.5rem;

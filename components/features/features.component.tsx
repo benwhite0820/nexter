@@ -1,5 +1,6 @@
 import './features.style.scss';
 import { featureMockData } from '@/data/featureMockData';
+import Heading from '../heading/heading.component';
 
 const Features = () => {
   return (
@@ -7,7 +8,9 @@ const Features = () => {
       {featureMockData.map(({ title, content, logo }, index) => (
         <div className="feature" key={index}>
           {logo}
-          <h4 className="heading-4 heading-4--dark">{title}</h4>
+          <Heading headingLevel="h4" color="dark">
+            {title}
+          </Heading>
           <p className="feature__text">{content}</p>
         </div>
       ))}
