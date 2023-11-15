@@ -1,0 +1,29 @@
+@import '../../scss/extend';
+@import '../../scss/variables';
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  line-height: 1;
+  font-style: italic;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+}
+
+.light {
+  color: $color-grey-light-1;
+}
+
+.dark {
+  color: $color-grey-dark-1;
+}
