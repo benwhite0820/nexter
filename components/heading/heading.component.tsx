@@ -3,7 +3,7 @@ import { Josefin_Sans } from 'next/font/google';
 import React from 'react';
 
 type Props = {
-  headingLevel: 'h2' | 'h3' | 'h4';
+  headingLevel: 'h2' | 'h3' | 'h4' | 'h5';
   className?: string;
   children: React.ReactNode;
   color?: 'dark' | 'light';
@@ -31,6 +31,13 @@ const Heading = ({ headingLevel, children, className = '', color }: Props) => {
       <h4 className={`${className} ${color} heading-4 ${josefin.className}`}>
         {children}
       </h4>
+    );
+
+  if (headingLevel === 'h5')
+    return (
+      <h5 className={`${className} ${color} heading-5 ${josefin.className}`}>
+        {children}
+      </h5>
     );
 };
 

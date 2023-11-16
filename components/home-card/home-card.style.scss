@@ -1,0 +1,29 @@
+@import '../../scss/variables';
+
+.home-card {
+  background-color: $color-grey-light-1;
+
+  img {
+    width: 100%;
+  }
+
+  .home__like {
+  }
+
+  .home__name {
+  }
+
+  .home__location,
+  .home__rooms,
+  .home__area,
+  .home__price {
+    p {
+    }
+  }
+
+  .home__icon {
+    fill: $color-primary;
+    height: 2rem;
+    width: 2rem;
+  }
+}
