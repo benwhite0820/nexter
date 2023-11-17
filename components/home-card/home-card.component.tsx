@@ -1,4 +1,4 @@
-import { BiSolidHome } from 'react-icons/bi';
+import { BiHeartCircle } from 'react-icons/bi';
 import { BsSignpost } from 'react-icons/bs';
 import './home-card.style.scss';
 import { IoPersonOutline } from 'react-icons/io5';
@@ -30,7 +30,7 @@ const HomeCard = ({
   return (
     <div className="home-card">
       <img src={image} alt={alt} className="home__img" />
-      <BiSolidHome className="home__icon" />
+      <BiHeartCircle className="home__like" />
       <Heading headingLevel="h5" className="home__name">
         {headingMessage}
       </Heading>
@@ -52,7 +52,7 @@ const HomeCard = ({
         <IoPricetagOutline className="home__icon" />
         <p>{price}</p>
       </div>
-      <Button>Contact realtor</Button>
+      <Button className="home-btn">Contact realtor</Button>
     </div>
   );
 };
