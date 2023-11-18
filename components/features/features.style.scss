@@ -1,5 +1,6 @@
 @import '../../scss/variables';
 @import '../../scss/extend';
+@import '../../scss/mixin';
 
 .features {
   grid-column: center-start / center-end;
@@ -8,6 +9,13 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 6rem;
   align-items: start;
+
+  @include respond(bp-smallest) {
+    grid-column: 1 / -1;
+    margin: 5rem 0;
+    padding: 0 3rem;
+    gap: 3rem;
+  }
 
   .feature {
     display: grid;

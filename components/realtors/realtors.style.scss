@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixin';
 
 .realtors {
   background-color: $color-secondary;
@@ -10,12 +11,24 @@
   row-gap: 2rem;
   justify-items: center;
 
+  @include respond(bp-medium) {
+    grid-column: 1/-1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     column-gap: 2rem;
     row-gap: 5vh;
     align-items: center;
+
+    @include respond(bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @include respond(bp-small) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {

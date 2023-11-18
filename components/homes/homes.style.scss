@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixin';
 
 .homes {
   grid-column: center-start / center-end;
@@ -6,4 +7,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+
+  @include respond(bp-smallest) {
+    grid-column: 1 / -1;
+    margin: 5rem 0;
+    padding: 0 3rem;
+    gap: 3rem;
+  }
 }

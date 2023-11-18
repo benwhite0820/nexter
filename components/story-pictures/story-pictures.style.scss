@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixin';
 
 .story__pictures {
   background-color: $color-primary;
@@ -8,17 +9,28 @@
       rgba($color-primary, 0.5)
     ),
     url('../../public/back.jpg');
+  background-size: cover;
 
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
 
+  @include respond(bp-medium) {
+    grid-column: 1/-1;
+    padding: 6rem;
+  }
+
   .story__img--1 {
     width: 100%;
     grid-row: 2/6;
     grid-column: 2/6;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+
+    @include respond(bp-medium) {
+      grid-column: 1/5;
+      grid-row: 1/-1;
+    }
   }
 
   .story__img--2 {
@@ -27,5 +39,10 @@
     grid-column: 4/7;
     z-index: 20;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+
+    @include respond(bp-medium) {
+      grid-row: 1/-1;
+      width: 100%;
+    }
   }
 }
